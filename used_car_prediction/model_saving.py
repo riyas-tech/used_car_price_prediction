@@ -10,7 +10,7 @@ if not os.path.isdir("./used_car_prediction/model"):
     os.mkdir("./used_car_prediction/model")
 
 
-df = pd.read_csv("D:\\nlp_workrepo\\ml_learning\\used_car_prediction\\data\\used_cars.csv")
+df = pd.read_csv("D:\\nlp_workrepo\\used_car_price_prediction\\used_car_prediction\\data\\used_cars.csv")
 
 price = df["price"]
 price = price.str.replace("$", "")
