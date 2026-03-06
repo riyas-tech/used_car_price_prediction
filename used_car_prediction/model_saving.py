@@ -63,8 +63,4 @@ for i in range(0, 10000):
     # if i % 100 == 0:
     #     print(loss)
 
-x_data = torch.tensor([[5,10000], [2, 10000], [5, 20000]], dtype=torch.float32)    
-
-prediction = model((x_data - X_mean) / X_std)
-
-print(prediction * y_std + y_mean)
+torch.save(model.state_dict(), "./used_car_prediction/model/model.pt")
